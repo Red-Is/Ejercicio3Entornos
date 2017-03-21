@@ -1,4 +1,4 @@
-package Vehiculos;
+package ejercicio.pkg3.entornos;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,7 +9,7 @@ package Vehiculos;
 /**
  *
  * @author Alejandro Ariza
- * @version 1
+ * @version 1.01
  */
 public abstract class Vehiculo {
     private String matricula;
@@ -32,14 +32,14 @@ public abstract class Vehiculo {
     }
     /**
      * Método que devuelve la matrícula del vehículo
-     * @return Devuelve un String que es la matrícula del vehículo
+     * @return Devuelve la matrícula del vehículo en un String
      */
     public String getMatricula() {
         return matricula;
     }
     /**
      * Método que devuelve los dias de alquiler del vehículo
-     * @return Devuelve un entero que son los dias de alquiler del vehículo
+     * @return Devuelve los dias de alquiler del vehículo en un entero
      */
     public int getDias_alquiler() {
         return dias_alquiler;
@@ -60,11 +60,11 @@ public abstract class Vehiculo {
     }
     /**
      * Método que calcula el importe del alquiler
-     * @return Devuelve un entero que es la cantidad del alquiler
+     * @return Devuelve la cantidad del alquiler en un entero
      */
     public abstract double importeAlquiler();
     /**
      * Imprime por pantalla la información del vehículo
      */
-    public abstract void mostrarInfo();
+    public abstract void recibo();
 }

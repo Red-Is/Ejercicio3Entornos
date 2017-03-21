@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vehiculos.Carga;
+package Vehiculo.Carga;
 
 /**
  *
  * @author user
  */
-public class VehiculoCarga {
+public class Camion {
     
 }
