@@ -5,12 +5,12 @@
  */
 package Vehiculo.Carga;
 
-import ejercicio.pkg3.entornos.Vehiculo;
+import Alquiler.Vehiculo;
 
 /**
  *
  * @author Alejandro Ariza
- * @version 1
+ * @version 1.01
  */
 public abstract class VehiculoCarga extends Vehiculo {
     private int tara;
@@ -57,8 +57,8 @@ public abstract class VehiculoCarga extends Vehiculo {
     @Override
     public void recibo() {
         System.out.println("Matrícula: " + this.getMatricula()
-                         + "Duración: " + this.getDias_alquiler()
-                         + "Tara: " + this.getTara()
-                         + "Importe: " + this.importeAlquiler());
+                         + "\nDuración: " + this.getDias_alquiler()
+                         + "\nTara: " + this.getTara()
+                         + "\nImporte: " + this.importeAlquiler());
     }
 }

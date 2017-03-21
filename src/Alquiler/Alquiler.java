@@ -3,24 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio.pkg3.entornos;
+package Alquiler;
 
+import Excepciones.CadenaVaciaException;
 import Vehiculo.Transporte.*;
 import Vehiculo.Carga.*;
+import ejercicio.pkg3.entornos.ES;
 import java.util.ArrayList;
 
 /**
  *
  * @author Alejandro Ariza
- * @version 1
+ * @version 1.1
  */
-public class Alquiler implements Datos {
+public final class Alquiler implements Datos {
     private ArrayList<Vehiculo> pedido;
     /**
      * Constructor por parámetros de la clase
      * @param nVehiculos Número de vehículos en el pedido
      */
-    public Alquiler(int nVehiculos) {
+    public Alquiler(int nVehiculos) throws CadenaVaciaException {
         pedido = new ArrayList<>();
         
         for(int i = 0; i < nVehiculos; i++) {
@@ -30,9 +32,9 @@ public class Alquiler implements Datos {
             ES.println("Introduce el tipo de vehiculo(C=coche, B=bus, F=furgoneta, T=camion): ");
             tipo = ES.getChar();
             ES.println("Introduce la matrícula del vehículo: ");
-            tipo = ES.getChar();
+            matricula = ES.getString();
             ES.println("Introduce la duración del alquiler: ");
-            tipo = ES.getChar();
+            dias = ES.getInt();
             
             switch(tipo) {
                 case 'C':

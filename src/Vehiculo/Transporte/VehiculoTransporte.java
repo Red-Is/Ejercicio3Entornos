@@ -5,12 +5,12 @@
  */
 package Vehiculo.Transporte;
 
-import ejercicio.pkg3.entornos.Vehiculo;
+import Alquiler.Vehiculo;
 
 /**
  *
  * @author Alejandro Ariza
- * @version 1
+ * @version 1.01
  */
 public abstract class VehiculoTransporte extends Vehiculo {
     private int plazas;
@@ -58,8 +58,8 @@ public abstract class VehiculoTransporte extends Vehiculo {
     @Override
     public void recibo() {
         System.out.println("Matrícula: " + this.getMatricula()
-                         + "Duración: " + this.getDias_alquiler()
-                         + "Plazas: " + this.getPlazas()
-                         + "Importe: " + this.importeAlquiler());
+                         + "\nDuración: " + this.getDias_alquiler()
+                         + "\nPlazas: " + this.getPlazas()
+                         + "\nImporte: " + this.importeAlquiler());
     }
 }

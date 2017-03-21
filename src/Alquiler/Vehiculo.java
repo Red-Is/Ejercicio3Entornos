@@ -1,4 +1,4 @@
-package ejercicio.pkg3.entornos;
+package Alquiler;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

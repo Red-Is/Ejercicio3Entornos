@@ -5,9 +5,13 @@
  */
 package ejercicio.pkg3.entornos;
 
+import Alquiler.Alquiler;
+import Excepciones.CadenaVaciaException;
+
 /**
  *
- * @author user
+ * @author Alejandro Ariza
+ * @version 1
  */
 public class Ejercicio3Entornos {
 
@@ -23,8 +27,13 @@ public class Ejercicio3Entornos {
          * Curso académico: 2016-2017
          * Poniente Formación
          */
-        
-        
+        try {
+            Alquiler a = new Alquiler(3);
+
+            a.mostrarDatos();
+        } catch(CadenaVaciaException e) {
+            ES.printErr("Error: " + e);
+        }
     }
     
 }
