@@ -34,7 +34,7 @@ public class Camion extends VehiculoCarga {
         System.out.println("--------------------\n" +
                            "CAMIÓN\n" +
                            "--------------------\n" +
-                           "información");
+                           "información\n");
         super.recibo();
     }
     /**

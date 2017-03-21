@@ -34,7 +34,7 @@ public class Furgoneta extends VehiculoCarga {
         System.out.println("--------------------\n" +
                            "FURGONETA\n" +
                            "--------------------\n" +
-                           "información");
+                           "información\n");
         super.recibo();
     }
     /**

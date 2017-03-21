@@ -34,7 +34,7 @@ public class Coche extends VehiculoTransporte {
         System.out.println("--------------------\n" +
                            "COCHE\n" +
                            "--------------------\n" +
-                           "información");
+                           "información\n");
         super.recibo();
     }
     /**

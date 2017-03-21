@@ -34,7 +34,7 @@ public class Bus extends VehiculoTransporte {
         System.out.println("--------------------\n" +
                            "BUS\n" +
                            "--------------------\n" +
-                           "información");
+                           "información\n");
         super.recibo();
     }
     /**
